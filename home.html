@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgistration Page </title>
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    <section id='home'>
+    <header>
+        <h2 class="logo">Steakhouse</h2>
+        <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="#aboutUs">About Us</a>
+            <a href="#contactUs">Contact Us</a>
+            
+            <button class="btnLogin-popup">SignUp</button>
+        </nav>
+    </header>
+
+    <h1 class="slogan">A Premium And Authentic Steakhouse
+    </h1>
+    <img class="food-img" src="./assets/food-img.png" alt="">
+    
+    <button class="bookBtn">Book A Table</button>
+    
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="email" required>
+                    <label for="">Email</label>  
+                </div>
+                <div class="input-box">
+                    <span class="icon"> <ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="password" required>
+                    <label for="">Password</label>  
+                </div>
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox" name="" >Remember me
+                    </label>
+                    <a href="#">Forgot password</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+                <p>Don't have an account? <a href="#" class="register-link"  >Register</a></p>
+            </div>
+            </form>
+        </div>
+        <div class="form-box registration">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                <input type="text" name="username" required>
+                <label for="">Username</label>  
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="email" required>
+                    <label for="">Email</label>  
+                </div>
+                <div class="input-box">
+                    <span class="icon"> <ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="password" required>
+                    <label for="">Password</label>  
+                </div>
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox" name="" >I agree to the terms & Conditions
+                    </label>
+                    
+                </div>
+                <button type="submit" class="btn">Resgister</button>
+            <div class="login-register">
+                <p>Already have an account? <a href="#" class="login-link"  >Login</a></p>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/home.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</section>
+<section id="aboutUs"></section>
+<section id="contactUs"></section>
+</body>
+</html>
