@@ -12,19 +12,19 @@
         <div>
             <h2 class="heading1">Let's</h2>
             <h1 class="heading2">Book a Table</h1>
-            <form>
+            <form action="/booking" method="post">
                 <div class="input_fields">
                     <div class="date_text">
                         <label class="date_label">Date</label><br>
-                        <input type="date" id="datepicker" class="inp_date">
+                        <input type="date" id="datepicker" name="date" class="inp_date" required>
                     </div>
                     <div class="time_text">
                         <label class="time_label" for="timepicker">Time</label><br>
-                        <input type="time" id="timepicker" name="timepicker" class="inp_time">
+                        <input type="time" id="timepicker" name="time" class="inp_time" required>
                     </div>
                     <div class="guest_list">
                         <label class="guest_label">Guest</label><br>
-                        <select id="number" name="number" class="inp_guest">
+                        <select id="number" name="partySize" class="inp_guest" required>
                             <option value="1">1 Guest</option>
                             <option value="2">2 Guests</option>
                             <option value="3">3 Guests</option>
