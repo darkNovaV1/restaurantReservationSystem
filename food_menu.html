@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header_main">
+        <h1 class="main_heading">Food Menu</h1>
+        <i class="fa fa-cart-plus" id="cart-plus">0 Items</i>
+    </div>
+    <div class="menu_page">
+        <div id="food_items" class="food_items">
+            <div class="card1" id="card1">
+                <div id="card_top_1">
+                    <i class="fa fa-star" id="rating">4.5</i>
+                    <i class="fa fa-circle-o add-to-cart" id="s1" aria-hidden="true"></i>
+                </div>
+                <div class="food_img_1">
+                    <img src="burgerr.jpg" class="image_food1">
+                </div>
+                <div class="food_name_1" id="food_name_1">
+                    <h1>Burger</h1>
+                </div>
+                <div class="food_cost_1" id="food_cost_1">
+                    <p>Rs.120</p>
+                </div>
+                <div>
+                    <button class="btn1">Select</button>
+                </div>
+            </div>
+            <div class="card2" id="card2">
+                <div id="card_top_2">
+                    <i class="fa fa-star" id="rating">4.8</i>
+                    <i class="fa fa-circle-o add-to-cart" id="s2" aria-hidden="true"></i>
+                </div>
+                <div class="food_img_2">
+                    <img src="pizzajpg.jpg" class="image_food1">
+                </div>
+                <div class="food_name_2" id="food_name_2">
+                    <h1>Vegetable Pizza</h1>
+                </div>
+                <div class="food_cost_2" id="food_cost_2">
+                    <p>Rs.170</p>
+                </div>
+                <div>
+                    <button class="btn1">Select</button>
+                </div>
+            </div>
+            <div class="card3" id="card3">
+                <div id="card_top_3">
+                    <i class="fa fa-star" id="rating">4.5</i>
+                    <i class="fa fa-circle-o add-to-cart" id="s3" aria-hidden="true"></i>
+                </div>
+                <div class="food_img_3">
+                    <img src="pasta2.jpg" class="image_food3">
+                </div>
+                <div class="food_name_3" id="food_name_3">
+                    <h1>Pasta</h1>
+                </div>
+                <div class="food_cost_3" id="food_cost_3">
+                    <p>Rs.80</p>
+                </div>
+                <div>
+                    <button class="btn1">Select</button>
+                </div>
+            </div>
+            <div class="card4" id="card4">
+                <div id="card_top_4">
+                    <i class="fa fa-star" id="rating">5</i>
+                    <i class="fa fa-circle-o add-to-cart" id="s4" aria-hidden="true"></i>
+                </div>
+                <div class="food_img_4">
+                    <img src="fries.jpg" class="image_food4">
+                </div>
+                <div class="food_name_4" id="food_name_4">
+                    <h1>French Fries</h1>
+                </div>
+                <div class="food_cost_4" id="food_cost_4">
+                    <p>Rs.70</p>
+                </div>
+                <div>
+                    <button class="btn1">Select</button>
+                </div>
+            </div>
+            <div class="card5" id="card5">
+                <div id="card_top_5">
+                    <i class="fa fa-star" id="rating">4.4</i>
+                    <i class="fa fa-circle-o add-to-cart" id="s5" aria-hidden="true"></i>
+                </div>
+                <div class="food_img_5">
+                    <img src="fried-rice.jpg" class="image_food5">
+                </div>
+                <div class="food_name_5" id="food_name_5">
+                    <h1>Fried Rice</h1>
+                </div>
+                <div class="food_cost_5" id="food_cost_5">
+                    <p>Rs.80</p>
+                </div>
+                <div>
+                    <button class="btn1">Select</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cart_page" class="cart-toggle">
+        <p id="cart-title">Cart Items</p>
+        <p id="m-total-amount">Total Amount : Rs.120</p>
+        <table class="tbl">
+            <thead>
+                <td>Item</td>
+                <td>Name</td>
+                <td>Quantity</td>
+                <td>Price</td>
+            </thead>
+            <tbody id="table-body">
+                <tr>
+                    <td><img src="burgerr.jpg" alt="img"></td>
+                    <td>Burger</td>
+                    <td>
+                        <button class="decrease-item">-</button>
+                        <span>1</span>
+                        <button class="increase-item">+</button>
+                    </td>
+                    <td>120</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="checkout" class="cart-toggle">
+            <p id="totall-item">Total Item : 5</p>
+            <p id="total-price">Total Price : Rs.600</p>
+            <button class="cart-btn">Checkout</button>
+        </div>
+    </div>
+    <script src="menu-script.js" type="module"></script>
+</body>
+</html>
