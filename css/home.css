@@ -153,38 +153,33 @@ header{
 /* about US section */
 
 #aboutUs{
-    background-color: black;
+    background-color: rgb(22 22 22);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
     
 
 }
 
-.aboutUs-image{
-    background-color: black;
-    }
+
 .aboutUs-image img{
-    margin: 50px 0px ;
+    margin: 100px 0px ;
     width: 100%;
 }
 .aboutUs-content{
-    background-color: black;
-    margin-top: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     margin-left: 40px;
+    color: #fff;
+    font-size: 1.3rem;
 }
 .head1{
-    font-size: 50px;
-    color: white;
-}
-.content1, .more_content{
-    font-size: 20px;
-    color: white;
-}
-.hidden{
-    color: black;
+    font-size: 3rem;
+    
 }
 
-/* contact US section */
+
+
+/* -------------------------------contact US section -------------------------------*/
 #contactUs{
     background-color: #bb0d16;
     display: grid;
