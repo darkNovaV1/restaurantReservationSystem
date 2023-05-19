@@ -9,12 +9,12 @@ font-family: 'Poppins', sans-serif;
 }
 
 html{
-    scroll-snap-type:y mandatory;
+    scroll-snap-type: y mandatory;
 }
 
 section{
-    scroll-margin-top: 90px;
-    height: 100vh;
+    scroll-margin-top: 100px;
+    height: 97vh;
     scroll-snap-stop: always;
     scroll-snap-align: start;
 }
@@ -181,7 +181,7 @@ header{
 
 /* -------------------------------contact US section -------------------------------*/
 #contactUs{
-    background-color: black;
+    background-color: rgb(22, 22, 22);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px,2fr));
     
@@ -220,7 +220,7 @@ footer{
     color: white;
 }
 .social_links{
-    background: rgb(22, 22, 22);
+    background: rgb(39, 38, 38);
     height: 8vh;
     display: flex;
     justify-content: center;
@@ -273,4 +273,8 @@ footer{
 .fa-copyright{
     color: white;
 }
-
+.chef{
+    height: 370px;
+    position: absolute;
+    top: 1540px;
+}
