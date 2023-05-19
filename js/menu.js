@@ -66,7 +66,7 @@ function generateBill() {
 
     let selectFoods = []; 
 
-    if (selectedCard != null) {
+    if (selectedCard.length !=0) {
         selectedCard.forEach(selectedCard => {
             let foodName = selectedCard.children[1].children[0].textContent;
             let foodCost = selectedCard.children[1].children[2].textContent;
@@ -77,6 +77,10 @@ function generateBill() {
                 cost: foodCost
             });
         })
+    }
+    else{
+        selectFoods.push({name:'Reservation fee',cost:15})
+        console.log('hi');
     }
 
     // selecting items list container than will contain all list items
