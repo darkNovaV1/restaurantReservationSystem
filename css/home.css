@@ -181,21 +181,96 @@ header{
 
 /* -------------------------------contact US section -------------------------------*/
 #contactUs{
-    background-color: #bb0d16;
+    background-color: black;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px,2fr));
     
 
 }
 
-.contactUs-image{
-    background-color: orange;
-    }
-.contactUs-image img{
-    margin: 50px 0px ;
-    width: 100%;
+.head2{
+    margin-left: 50px;
+   
+    padding-left: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    color: white;
 }
-.contactUs-content{
-    background-color: aqua;
+
+.new_section{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 70px;
+}
+.new_section h3{
+    font-size: 25px;
+    word-spacing: 2px;
+}
+.new_section p{
+    font-size: 20px;
+    word-spacing: 2px;
+    font-weight: 200;
+}
+footer{
+    display: flex;
+    margin-top: 50px;
+    padding-top: 60px;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: white;
+}
+.social_links{
+    background: rgb(22, 22, 22);
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.a1, .a2, .a3{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin: 10px;
+    line-height: 50px;
+
+}
+.a1 i,.a2 i, .a3 i{
+    transition: all 0.3s linear;
+}
+.a1:hover i{
+    transform: scale(1.4);
+}
+.a2:hover i{
+    transform: scale(1.4);
+}
+.a3:hover i{
+    transform: scale(1.4);
+}
+
+
+.footer_bottom{
+    color: white;
+    
+    
+   
     
 }
+.footer_bottom p{
+    font-size: 18px;
+    word-spacing: 2px;
+    margin: 18px;
+}
+.footer3{
+    display: flex;
+    justify-content: left;
+    height: 13vh;
+}
+.fa-copyright{
+    color: white;
+}
+
