@@ -5,8 +5,22 @@ body{
     color: white;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-snap-type: y mandatory;
+}
+
+
+section{
+    padding-top: 50px;
+    scroll-snap-stop: always;
+    scroll-snap-align: start;
+    min-height: 100vh;
+
+}
+
+
 header{
-    background-color:rgb(22 22 22);
+    background-color:transparent;
     position:sticky;
     top:0;
     left: 0;
@@ -41,9 +55,9 @@ table, th, td{
     font-size:2.5rem;
     user-select: none;
 }
-h1{
+#menu h1{
     margin-left: 30px;
-    font-size: 40px;
+    font-size: 3rem;
 }
 .image_food1{
     width: 90%;
@@ -57,4 +71,30 @@ h1{
 }
 th{
     font-size: 25px;
+}
+
+#menuUpdate {
+    margin-left: 30px;
+}
+#menuUpdate h1{
+    font-size: 3rem;
+
+}
+#menuUpdate label,input{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#menuUpdate button{
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #0dbb50;
+    width: 140px;
+    height: 45px;
+    border-radius: 10px;
+}
+#menuUpdate button:hover{
+    background: #0dbb50;
+    
 }

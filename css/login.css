@@ -10,19 +10,20 @@ color: #fff;
 }
 
 .container{
-    background: rgb(22 22 22);
+    background:black;
     height: 100vh;
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: repeat(auto-fill, minmax(50%,1fr))
 }
 
 
 .image-container{
     padding-top: 15px;
-    padding-left: 50px;
+    padding-left: 3.187rem;
 }
 
 .image-container .logo{
+    margin-left:3.187rem;
     font-weight: 100;
     font-family: 'Great Vibes', cursive;
     color:#0dbb50;
