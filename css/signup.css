@@ -73,6 +73,7 @@ body{
 }
 .form-container input{
     color: white;
+    padding: 1%;
     font-size: 1.1rem;
     margin-top: 1px;
     margin-bottom: 3%;
