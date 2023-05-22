@@ -12,21 +12,63 @@
 body{
     background-color: #000;
 }
-.header{
-    margin-left: 5%;
+
+header{
+    background-color: black;
+    position:sticky;
+    top:0;
+    left: 0;
+    max-width: 100%;
+    padding: 20px 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-weight: 100;
+    font-family: 'Great Vibes', cursive;
+    color:#0dbb50;
+
+    font-size:2.5rem;
+    user-select: none;
+    
+    
+
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
     
 }
 
-.header .logo {
-  
-    margin-top: 1.5%;
-    font-weight: 100;
-    font-family: 'Great Vibes';
-    color: #0dbb50;
-    font-size: 2.5rem;
-    user-select: none;
-  }
-  
+.navigation a::after{
+   content: " ";
+   position: absolute;
+   left:0px;
+   bottom:-5px;
+    width: 100%;
+   height: 3px; 
+   background-color:#0dbb50;
+   border-radius: 5px;
+   transform-origin: right;
+   transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+    
+}
+
   .container .heading {
 
     margin-top: 3%;
@@ -41,7 +83,7 @@ body{
 .container{
     
     color: #fff;
-    margin: 3% 5% 0% 5%;
+    margin: 3% 5% 0% 100px;
     
     text-transform: uppercase;
     min-height: 80vh;
