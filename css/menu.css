@@ -72,16 +72,30 @@ header{
   transform: scaleX(1);
   
 }
+/* <-----------------------------------------Menu Title----------------------------> */
 
+.title{
+  position: sticky;
+    top:90px;
+    left: 100px;
+    z-index: 5;
+    background-color: black;
+}
+.title h1{
+    
+
+    font-size: 3rem;
+    margin-left: 100px;
+}
   
 /* <-----------------------------------------Menu Container----------------------------> */
 
   .container {
     
-    margin: 2%  0% 2% 100px;  
+    margin: 2%  100px 2% 100px;  
     display: grid;
-    gap:15px;
-    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap:5px;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 200px));
     
   }
   
@@ -168,8 +182,8 @@ header{
     left:100px;
     width: 130px;
     height:50px;
-    background:rgb(22 22 22);
-    border: 2px solid #0dbb50;
+    background:#0dbb50;
+    border: 2px solid white;
     outline:none;
     border-radius: 6px;
     cursor:pointer;
@@ -179,7 +193,7 @@ header{
     transition: .5s;
 }
 .footer .confirmBtn:hover{
-    background-color: #0dbb50;
+    background-color: #0eec63;
     color: black; 
 }
 
@@ -205,6 +219,7 @@ header{
      overflow: hidden; 
     transition: transform .5s ease,height .2s ease ;
     transform: scale(0);
+    z-index: 99;
 }
 
 .wrapper1.active-popup{

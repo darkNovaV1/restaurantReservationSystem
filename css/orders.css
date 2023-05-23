@@ -59,22 +59,35 @@ header{
    transform: scaleX(0);
     transition: transform .5s;
 }
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
 
+}
 
 
 h1{
     margin-left: 100px;
     font-size: 3rem;
 }
+table{
+    border-collapse: collapse;
+
+}
 table, th, td{
     margin-top: 50px;
     width: 800px;
     margin-left: 100px;
     font-size: 20px;
-    padding: 20px;
     text-align: center;
-    border: 2px solid white;
+    border: 1px solid gray;
 }
-th{
+table tr:nth-of-type(2n) {
+    background-color: rgb(20, 20, 20);
+}
+
+table th {
+    background-color: rgba(228, 215, 215, 0.801);
+    color: black;
     font-size: 25px;
 }

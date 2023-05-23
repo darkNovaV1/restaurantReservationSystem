@@ -21,5 +21,5 @@ if(minute < 10){
     minute = '0' + minute;
 }
 var minTime = hour + ":" + minute;
-document.getElementById("timepicker").setAttribute('min',minTime);
-console.log(minTime); 
+//document.getElementById("timepicker").setAttribute('min',minTime);
+//console.log(minTime); 
