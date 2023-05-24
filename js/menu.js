@@ -64,13 +64,13 @@ function generateBill() {
 
     const selectedCard = document.querySelectorAll('.wrapper.selected');
 
-    let selectFoods = []; 
+    let selectFoods = [];
 
-    if (selectedCard != null) {
+    if (selectedCard.length != 0) {
         selectedCard.forEach(selectedCard => {
             let foodName = selectedCard.children[1].children[0].textContent;
             let foodCost = selectedCard.children[1].children[2].textContent;
-            
+
             // adding select food name and cost to selectfoods arry
             selectFoods.push({
                 name: foodName,
@@ -78,10 +78,14 @@ function generateBill() {
             });
         })
     }
+    else {
+        selectFoods.push({ name: 'Reservation fee', cost: 15 })
+
+    }
 
     // selecting items list container than will contain all list items
     let itemListElement = document.querySelector('.items-list');
-    
+
     // generating dynamic content for pop screen item list
     let itemListContent = ""
 
@@ -106,4 +110,28 @@ function generateBill() {
         totalCostValue = totalCostValue + parseInt(item.cost);
     })
     totalCostElement.textContent = totalCostValue;
+
+  // Add event listener to the pay button
+  const payButton = document.querySelector('.pay-btn');
+
+  payButton.addEventListener('click', () => {
+    // Send the bill information to the server
+    fetch('/bill', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ selectFoods })
+    })
+      .then(response => response.json())
+      .then(data => {
+        // Handle the response from the server
+        console.log(data);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  });
+
 }
+    

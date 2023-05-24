@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     background-color: black;
     color: white;
-    font-family: 'Poppins', sans-serif;
 }
+
 
 
 header {
@@ -13,8 +20,8 @@ header {
     position: sticky;
     top: 0;
     left: 0;
-    max-width: 85%;
-    padding: 0px 100px;
+    max-width: 100%;
+    padding: 20px 100px;
 
     display: flex;
     justify-content: space-between;
@@ -64,83 +71,39 @@ header {
 
 }
 
-table{
-    border-collapse: collapse;
+.container {
+    padding: 0 3.125rem;
+    margin-top: 3%;
+    min-height: 80vh;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 
 }
 
-table,
-th,
-td {
-
-    width: 900px;
-    margin-left: 100px;
-    font-size: 20px;
-    text-align: center;
-    border: 1px solid white;
+.image-container {
+    gap: 10px;
+    align-self: center;
+    justify-self: center;
 }
 
-table tr:nth-of-type(2n) {
-    background-color: rgb(20, 20, 20);
-}
+.image-container img {
 
-table th {
-    background-color: rgb(228, 215, 215);
-    color: black;
-}
+    max-width: 100%;
+    margin: auto;
 
-
-.close img {
-    width: 40px;
-
-
-}
-
-.close {
-    border-radius: 3px;
-    background-color: transparent;
-    border: 0;
-    padding: 0;
-}
-
-#menu h1 {
-    margin-left: 100px;
-    padding-top: 0%;
-    margin-top: 0;
-    font-size: 3rem;
-}
-
-.image_food1 {
-     width: 40%; 
-    border-radius: 30px;
-    margin-top: 5px;
-    margin-left: 3px;
-}
-
-.head2 {
-    font-size: 50px;
-}
-
-th {
-    font-size: 25px;
-}
-
-.form-container h1 {
-    margin-left: 100px;
-    margin-bottom: 1%;
-    font-size: 3rem;
-}
-
-.form-container {
-    padding-top: 70px;
 }
 
 .form-container form {
-    margin-left: 100px;
+
     max-width: 100%;
     min-height: 100%;
 }
 
+.form-container h1 {
+    margin-bottom: 2%;
+    font-size: 3.5rem;
+}
 
 .form-container label {
     font-size: 1.5rem;
@@ -148,14 +111,26 @@ th {
 
 .form-container input {
     color: white;
-    padding: 1%;
+    padding: 2%;
     font-size: 1.1rem;
     margin-top: 1px;
-    margin-bottom: 1%;
+    margin-bottom: 3%;
     border: 1px solid white;
     background-color: transparent;
-    width: 40%;
-    height: 25px;
+    width: 80%;
+    height: 50px;
+}
+
+/* error message */
+.error-message {
+    position: absolute;
+    left: 50%;
+    min-width: 200px;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: orange;
+    background: rgba(226, 139, 51, 0.548);
+    padding: .3em;
 }
 
 .form-container button {

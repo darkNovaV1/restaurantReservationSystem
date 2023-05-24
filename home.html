@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resgistration Page </title>
+    <title>Steakhouse</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <header>
         <h2 class="logo">Steakhouse</h2>
+        <form action="/booking" method="get">
         <nav class="navigation">
             <a href="#home">Home</a>
-            <a href="#aboutUs">About Us</a>
-            <a href="#contactUs">Contact Us</a>
-            
-            <button class="btnLogin-popup">Book Now</button>
-        </nav>
+            <a href="#aboutUs">About</a>
+            <a href="#contactUs">Contacts</a>
+
+            <button type="submit" class="btnLogin-popup">Book Now</button>
+        </nav></form>
     </header>
     <section id='home'>
-    <div class="home-content">
-        <h1 class="slogan">A Premium And Authentic Steakhouse
-        </h1>
-        <form action="/booking" method="get">
-            <button class="bookBtn" type="submit" name="bookATable">Book A Table</button>
+        <div class="home-content">
+            <h1 class="slogan">A Premium And Authentic Steakhouse
+            </h1>
+            <form action="/booking" method="get">
+                <button class="bookBtn" type="submit" name="bookATable">Book A Table</button>
             </form>
-    </div>
-    <div class="home-image">
-        <img class="food-img" src="./assets/food-img.png" alt="">
-    </div>
-    
-    
+        </div>
+        <div class="home-image">
+            <img class="food-img" src="./assets/food-img.png" alt="">
+        </div>
 
-    
-   
 
+<<<<<<< HEAD
 </section>
 <section id="aboutUs" >
     
@@ -57,16 +61,53 @@
     <footer>
         
             <div class="new_section">
+=======
+
+
+
+
+    </section>
+    <section id="aboutUs">
+
+        <div class="aboutUs-image">
+            <img src="./assets/South-India-transformed.png" alt="">
+        </div>
+        <div class="aboutUs-content">
+            <h1 class="head1">About us</h1>
+            <p class="content1">Steakhouse was started in the year 1998.Steakhouse serves freshest ingredients with the
+                finest taste.Our chefs fuse together flavor and aroma to capture the essence of the traditional Indian
+                cuisines.</p>
+            <br>
+            <p class="more_content">"We believe in creating an unmatched experience by maintaining the highest standard
+                of quality, hygiene, service and customer satisfaction."</p>
+        </div>
+
+
+    </section>
+    <section id="contactUs">
+        <div class="contact-content">
+            <div class="cnct0">
+                <h1 class="head2">Contact Us</h1>
+            </div>
+
+            <div class="cnct1">
+>>>>>>> c55552340089687ffc7124ca9c0b33c60e18392f
                 <h3>Visit</h3>
                 <p>Steakhouse</p>
                 <p>34, Street 1, India</p>
+            </div>
+            <div class="cnct2">
                 <h3>Phone</h3>
                 <p>123-456-7891</p>
+                <p>987-654-3210</p>
+            </div>
+            <div class="cnct3">
                 <h3>Email</h3>
                 <p>Steakhouse@gmail.com</p>
+            </div>
+            <div class="cnct4">
                 <h3>Follow Us</h3>
-                <div class="social_links">
-                    <a href="#" class="a1">
+                <p> <a href="#" class="a1">
                         <i class="fa fa-2x fa-facebook"></i>
                     </a>
                     <a href="#" class="a2">
@@ -75,25 +116,28 @@
                     <a href="#" class="a3">
                         <i class="fa fa-2x fa-twitter"></i>
                     </a>
-                </div>  
-                <div class="footer_bottom">
-                    <div class="footer3">
-                        <p><i class="fa fa-copyright"></i> 2023<p>All rights reserved</p></p>
-                    </div>
-                </div>
+                </p>
+
             </div>
+<<<<<<< HEAD
         
         <div class="image_chef">
+=======
+
+        </div>
+
+        <div class="contact-image">
+>>>>>>> c55552340089687ffc7124ca9c0b33c60e18392f
             <img src="./assets/chef (1).png" class="chef">
-        </div> 
-        
-    </footer>
-    
+        </div>
+        <div class="footer"><span><i class="fa fa-copyright"></i> 2023 </span>All rights reserved</p>
+            </p>
+        </div>
+    </section>
 
-</section>
 
+    <script src="./js/home.js"></script>
 
- <script src="./js/home.js"></script>
-  
 </body>
+
 </html>

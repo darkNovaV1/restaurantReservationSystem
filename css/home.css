@@ -13,17 +13,23 @@ html{
 }
 
 section{
+<<<<<<< HEAD
     scroll-margin-top: 100px;
     height: 97vh;
+=======
+    padding-top: 90px;
+    min-height: 100vh;
+>>>>>>> c55552340089687ffc7124ca9c0b33c60e18392f
     scroll-snap-stop: always;
     scroll-snap-align: start;
+    
 }
 
 
 
 
 header{
-    background-color:rgb(22 22 22);
+    background-color: transparent;
     position:sticky;
     top:0;
     left: 0;
@@ -101,23 +107,23 @@ header{
     display: grid;
     grid-template-columns:repeat(auto-fill , minmax(500px,1fr));
     min-height: 100vh;
-    background-color: rgb(22 22 22);
+    background-color: black;
     
 
 }
 
 .slogan{
-    padding-top: 100px;
+    padding-top: 80px;
     padding-left: 100px;
     color: #fff;
-    font-size: 3rem;
+    font-size: 3.2rem;
     width: 70%;
     
     
 }
 
 .food-img{
-    padding-top: 50px;
+    padding-top: 30px;
     width: 75%;
     
 }
@@ -127,7 +133,7 @@ header{
     
     width: 130px;
     height:50px;
-    background:rgb(22 22 22);
+    background:black;
     border: 2px solid #0dbb50;
     outline:none;
     border-radius: 6px;
@@ -159,21 +165,23 @@ header{
     
 
 }
-
+.aboutUs-image{
+    margin-left: 70px;
+}
 
 .aboutUs-image img{
     margin: 100px 0px ;
     width: 100%;
 }
 .aboutUs-content{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 40px;
     color: #fff;
     font-size: 1.3rem;
+    padding-right: 16%;
+    padding-left: 5%;
 }
 .head1{
-    font-size: 3rem;
+    font-size: 3.2rem;
+    margin-bottom: 35px;
     
 }
 
@@ -181,14 +189,35 @@ header{
 
 /* -------------------------------contact US section -------------------------------*/
 #contactUs{
+<<<<<<< HEAD
     background-color: rgb(22, 22, 22);
+=======
+    min-height: 100vh;
+    background-color: black;
+    color: #fff;
+>>>>>>> c55552340089687ffc7124ca9c0b33c60e18392f
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px,2fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
     
 
 }
+.contact-content{
+    margin-left: 100px;
+    
+    
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+}
+
+.cnct0, .cnct3{
+    grid-column: 1/-1;
+
+}
+
+
 
 .head2{
+<<<<<<< HEAD
     margin-left: 50px;
    
     padding-left: 50px;
@@ -224,57 +253,55 @@ footer{
     height: 8vh;
     display: flex;
     justify-content: center;
+=======
+    font-size: 3.2rem;
+>>>>>>> c55552340089687ffc7124ca9c0b33c60e18392f
     
-   
 }
-.a1, .a2, .a3{
-    height: 40px;
-    width: 40px;
-    background-color: white;
-    border-radius: 50px;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    margin: 10px;
-    line-height: 50px;
+.contact-content h3{
+    font-size: 1.7rem;
+}
+
+.contact-content p{
+    font-size: 1.3rem;
+    
 
 }
-.a1 i,.a2 i, .a3 i{
+
+.contact-content a{
+    color: #0dbb50;
+    text-decoration: none;
+   
+}
+
+.contact-content i{
+    padding-top: 10px;
+    margin-right: 20px;
     transition: all 0.3s linear;
 }
-.a1:hover i{
-    transform: scale(1.4);
-}
-.a2:hover i{
-    transform: scale(1.4);
-}
-.a3:hover i{
-    transform: scale(1.4);
+.contact-content a:hover i{
+    color:rgb(27, 223, 20);
+    transform: scale(1.2);
 }
 
-
-.footer_bottom{
-    color: white;
-    
-    
-   
+.contact-image{
+padding-top: 10px;
     
 }
-.footer_bottom p{
-    font-size: 18px;
-    word-spacing: 2px;
-    margin: 18px;
+.contact-image img{
+ max-width: 68%;   
 }
-.footer3{
-    display: flex;
-    justify-content: left;
-    height: 13vh;
-}
-.fa-copyright{
-    color: white;
-}
+<<<<<<< HEAD
 .chef{
     height: 370px;
     position: absolute;
     top: 1540px;
+=======
+
+.footer{
+    padding: 20px 0px;
+    background-color: rgb(56, 58, 56);
+    grid-column: 1/-1;
+    text-align: center;
+>>>>>>> c55552340089687ffc7124ca9c0b33c60e18392f
 }
