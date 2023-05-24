@@ -13,13 +13,8 @@ html{
 }
 
 section{
-<<<<<<< HEAD
-    scroll-margin-top: 100px;
-    height: 97vh;
-=======
     padding-top: 90px;
     min-height: 100vh;
->>>>>>> c55552340089687ffc7124ca9c0b33c60e18392f
     scroll-snap-stop: always;
     scroll-snap-align: start;
     
@@ -189,13 +184,9 @@ header{
 
 /* -------------------------------contact US section -------------------------------*/
 #contactUs{
-<<<<<<< HEAD
-    background-color: rgb(22, 22, 22);
-=======
     min-height: 100vh;
     background-color: black;
     color: #fff;
->>>>>>> c55552340089687ffc7124ca9c0b33c60e18392f
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
     
@@ -217,45 +208,7 @@ header{
 
 
 .head2{
-<<<<<<< HEAD
-    margin-left: 50px;
-   
-    padding-left: 50px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 55px;
-    color: white;
-}
-
-.new_section{
-    font-family: 'Poppins', sans-serif;
-    margin-top: 70px;
-}
-.new_section h3{
-    font-size: 25px;
-    word-spacing: 2px;
-}
-.new_section p{
-    font-size: 20px;
-    word-spacing: 2px;
-    font-weight: 200;
-}
-footer{
-    display: flex;
-    margin-top: 50px;
-    padding-top: 60px;
-    width: 100vw;
-    font-family: "Open Sans";
-    padding-top: 40px;
-    color: white;
-}
-.social_links{
-    background: rgb(39, 38, 38);
-    height: 8vh;
-    display: flex;
-    justify-content: center;
-=======
     font-size: 3.2rem;
->>>>>>> c55552340089687ffc7124ca9c0b33c60e18392f
     
 }
 .contact-content h3{
@@ -291,17 +244,10 @@ padding-top: 10px;
 .contact-image img{
  max-width: 68%;   
 }
-<<<<<<< HEAD
-.chef{
-    height: 370px;
-    position: absolute;
-    top: 1540px;
-=======
 
 .footer{
     padding: 20px 0px;
     background-color: rgb(56, 58, 56);
     grid-column: 1/-1;
     text-align: center;
->>>>>>> c55552340089687ffc7124ca9c0b33c60e18392f
 }

@@ -81,15 +81,6 @@ header{
     } 
 
 .container{
-<<<<<<< HEAD
-    min-height: 100vh;
-    background: rgb(22, 22, 22);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    padding-bottom: 60px;
-=======
     
     color: #fff;
     margin: 3% 5% 0% 100px;
@@ -100,7 +91,6 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(45%,1fr));
     
->>>>>>> c55552340089687ffc7124ca9c0b33c60e18392f
 }
 
 

@@ -94,7 +94,7 @@ header{
     
     margin: 2%  100px 2% 100px;  
     display: grid;
-    gap:5px;
+    gap:35px;
     grid-template-columns: repeat(auto-fill, minmax(14rem, 200px));
     
   }

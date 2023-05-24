@@ -39,19 +39,22 @@
     </table>
 </section>
 
-    <section id="menuUpdate">
-    <div class="menu-container">
+<section id="menuUpdate">
+    <div class="form-container">
         <h1>Menu Insertion</h1>
-        <form action="/menuUpdate" method="post">
-            <label for="name">Name: </label>
+        <form action="/menuUpdate" method="post" enctype="multipart/form-data">
+            <label for="name">NAME</label><br>
             <input type="text" name="name" id="" required><br>
-            <label for="cost">Cost: </label>
+            <label for="cost">COST</label><br>
             <input type="number" name="cost" id="" required><br>
-            <label for="rating">Rating: </label>
-            <input type="number" name="rating" id="" required min="0" max="5"><br> <br>
+            <label for="rating">RATING</label><br>
+            <input type="number" name="rating" id="" required min="1" max="5" step="0.5"><br>
+            <label for="image">IMAGE</label><br>
+            <input type="file" name="image" id="" required><br>
             <button type="submit">Submit</button>
             </form>
     </div>
 </section>
+
 </body>
 </html>
