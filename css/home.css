@@ -21,7 +21,7 @@ section{
 }
 
 
-
+/*---------------------------home section----------------------------*/
 
 header{
     background-color: transparent;
@@ -36,6 +36,10 @@ header{
     align-items: center;
     z-index: 99;
 }
+.menu-bar{
+    display: none;
+}
+
 
 .logo{
     font-weight: 100;
@@ -111,7 +115,8 @@ header{
     padding-top: 80px;
     padding-left: 100px;
     color: #fff;
-    font-size: 3.2rem;
+    font-size: 53px;
+    font-weight: bolder;
     width: 70%;
     
     
@@ -151,7 +156,7 @@ header{
 
 
 
-/* about US section */
+/*--------------------------- about US section---------------------------*/
 
 #aboutUs{
     background-color: rgb(22 22 22);
@@ -250,4 +255,212 @@ padding-top: 10px;
     background-color: rgb(56, 58, 56);
     grid-column: 1/-1;
     text-align: center;
+}
+
+/*----------------------------Responsiveness------------------------------*/
+
+@media only screen and (max-width: 1320px){
+    header{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    header{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    #home .slogan{
+        
+        padding-top: 80px;
+        padding-left: 70px;
+    }
+    #home .home-image{
+        width: 100%;
+        height: 120%;
+        margin-top: 70px;
+        margin-left: 70px;
+    }
+    #contactUs .chef{
+        height: 85%;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1000px){
+    header{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #home .slogan{
+        
+        padding-top: 80px;
+        padding-left: 70px;
+    }
+    #home .home-image{
+        width: 70%;
+        height: 80%;
+        margin-top: 70px;
+        margin-left: 200px;
+    }
+    .aboutUs-image{
+        display: none;
+    }
+    .chef{
+       height: 85%;
+       width: 100%;
+       
+    }
+}
+@media only screen and (max-width: 970px){
+    .chef{
+        height: 85%;
+        width: 100%;
+        
+     }
+}
+@media only screen and (max-width: 915px){
+    #contactUs .chef{
+        display: none;
+    }
+}
+@media only screen and (max-width: 900px){
+    #contactUs .chef{
+        display: none;
+    }
+}
+@media only screen and (max-width: 850px){
+
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 50px;
+
+    }
+    .menu-bar{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        
+        cursor: pointer;
+       
+        width: 60px;
+        height: 60px;
+        
+        
+    }
+    .navigation{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        justify-items: right;
+        right: 0;
+        width: 100vw;
+        background: black;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .navigation.active{
+        height: 450px;
+    }
+    .navigation #a1{
+        display: block;
+        width: fit-content;
+        margin: 50px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .navigation.active #a1{
+        opacity: 1;
+    }
+    .navigation #a1{
+        margin-bottom: 12px;
+        padding: 10px 10px 10px 10px;
+    }
+    #home .slogan{
+        
+        padding-top: 80px;
+        padding-left: 70px;
+    }
+    .bookBtn{
+        margin-left: 60px;
+    }
+    #home .home-image{
+        width: 70%;
+        height: 80%;
+        margin-left: 170px;
+    }
+    #contactUs .chef{
+        display: none;
+    }
+}
+@media only screen and (max-width: 650px){
+    #home .slogan{
+        
+        padding-top: 80px;
+        padding-left: 70px;
+    }
+    #home .bookBtn{
+        justify-content: center;
+    }
+    #home .home-image{
+        width: 70%;
+        height: 80%;
+        margin-left: 130px;
+    }
+    
+}
+@media only screen and (max-width: 615px){
+    #contactUs .cnct0, .cnct1, .cnct2, .cnct3{
+        padding-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    #home .slogan{
+        
+        padding-top: 80px;
+        padding-left: 70px;
+    }
+    #home .bookBtn{
+        justify-content: center;
+    }
+    #home .home-image{
+        width: 80%;
+        height: 90%;
+        margin-left: 118px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #home .slogan{
+       
+        padding-top: 80px;
+        padding-left: 70px;
+    }
+    #home .bookBtn{
+        justify-content: center;
+    }
+    #home .home-image{
+        width: 80%;
+        height: 90%;
+        margin-left: 65px;
+    }
+}
+@media only screen and (max-width: 450px){
+    #home .slogan{
+        
+        padding-top: 80px;
+        padding-left: 70px;
+    }
+    #home .bookBtn{
+        justify-content: center;
+    }
+    #home .home-image{
+        width: 80%;
+        height: 90%;
+        margin-left: 60px;
+    }
+    
 }
