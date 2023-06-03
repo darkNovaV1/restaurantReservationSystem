@@ -36,6 +36,10 @@ header{
 
 }
 
+.menu-bar{
+    display: none;
+}
+
 .navigation a{
     position: relative;
     font-size: 1.1em;
@@ -91,3 +95,88 @@ table th {
     color: black;
     font-size: 25px;
 }
+
+
+/*----------------------------Responsiveness----------------------------*/
+@media only screen and (max-width: 920px){
+    table, th, td{
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 825px){
+    table, th, td{
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .logo{
+        position: absolute;
+        top: 18px;
+        left: 50px;
+  
+      }
+      .menu-bar{
+          display: block;
+          position: absolute;
+          top: 53px;
+          right: 30px;
+          
+          cursor: pointer;
+        
+          width: 60px;
+          height: 60px;   
+      }
+      .navigation{
+          height: 0;
+          position: absolute;
+          top: 93px;
+          justify-items: right;
+          right: 0;
+          width: 100vw;
+          background: black;
+          transition: 0.5s;
+          overflow: hidden;
+      }
+      .navigation.active{
+          height: 450px;
+      }
+      .navigation #a1{
+          display: block;
+          width: fit-content;
+          margin: 50px auto 0 auto;
+          text-align: center;
+          transition: 0.5s;
+          opacity: 0;
+      }
+      .navigation.active #a1{
+          opacity: 1;
+      }
+      .navigation #a1{
+          margin-bottom: 12px;
+          padding: 10px 10px 10px 10px;
+      }    
+      .container{
+        margin-top: 100px;
+      }
+}
+
+@media only screen and (max-width: 725px){
+    table, th, td{
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 625px){
+    table, th, td{
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 525px){
+    table, th, td{
+        width: 330px;
+    }
+}
+
+
+

@@ -23,3 +23,11 @@ if(minute < 10){
 var minTime = hour + ":" + minute;
 //document.getElementById("timepicker").setAttribute('min',minTime);
 //console.log(minTime); 
+
+
+//<-----------------------Responsiveness------------------------>
+responsive = document.querySelector(".responsive");
+responsive.onclick = function() {
+    anchor = document.querySelector(".navigation");
+    anchor.classList.toggle("active");
+}

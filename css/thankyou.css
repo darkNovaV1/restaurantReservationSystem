@@ -13,3 +13,46 @@ body{
     color: white;
     text-align: center;
 }
+
+
+/*-------------------------------Responsiveness-------------------------------*/
+@media only screen and (max-width: 1115px){
+    .img_t{
+        margin-left: 400px;
+    }
+}
+@media only screen and (max-width: 1035px){
+    .img_t{
+        margin-left: 380px;
+    }
+}
+@media only screen and (max-width: 955px){
+    .img_t{
+        margin-left: 300px;
+    }
+}
+@media only screen and (max-width: 840px){
+    .img_t{
+        margin-left: 230px;
+    }
+}
+@media only screen and (max-width: 740px){
+    .img_t{
+        margin-left: 200px;
+    }
+}
+@media only screen and (max-width: 640px){
+    .img_t{
+        margin-left: 150px;
+    }
+}
+@media only screen and (max-width: 580px){
+    .img_t{
+        margin-left: 120px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .img_t{
+        margin-left: 90px;
+    }
+}
